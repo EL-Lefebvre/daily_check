@@ -5,36 +5,46 @@ import { COLORS } from "../constants";
 const SideBar = () => {
   return (
     <Wrapper>
+        <Main>
       <Navig to="/">Home</Navig>
       <Navig to="/todos">To Dos</Navig>
       <Navig to="/mood">Mood Check</Navig>
+      </Main>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  background-color: lightgray;
+  background-color: ${COLORS.primary};
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
 
+  border-radius: 20px;
   padding-top: 100px;
 `;
+const Main = styled.div`
+background-color:${COLORS.primary};
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+align-items:center;
+height:50vh;
+border-radius:20px;
+`;
 const Navig = styled(NavLink)`
-  margin-top: 10px;
 
+  padding-top: 30px;
+width:80%;
   align-items: center;
   font-weight: bolder;
   height: 10vh;
-  color: black;
+  color: white;
   padding-left: 15px;
-  color: ${COLORS.primary};
-
+border: 1px solid white;
+border-radius:20px;
   &:hover {
-    color: ${COLORS.secondary};
+    color: black;
+   
 
-    border-radius: 50px;
   }
 `;
 

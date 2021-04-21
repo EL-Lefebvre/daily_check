@@ -1,16 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { COLORS } from "../constants";
+import Main from "./Main";
 const Home = () => {
   return (
-    <Wrapper>
-      <Title>One day at the time</Title>
-    </Wrapper>
+    <Main title={"Home"}>
+      <Wrapper>Hi</Wrapper>
+    </Main>
   );
 };
 
 const Wrapper = styled.div`
-  color: white;
+  background-color: blue;
+  height: 50vh;
 `;
-const Title = styled.div``;
-const Main = styled.div``;
+const Title = styled.div`
+  background-color: ${COLORS.secondary};
+`;
+
 export default Home;
