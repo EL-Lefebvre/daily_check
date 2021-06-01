@@ -11,7 +11,7 @@ const Home = () => {
 };
 
 const Wrapper = styled.div`
-  background-color: blue;
+color:black;
   height: 50vh;
 `;
 const Title = styled.div`

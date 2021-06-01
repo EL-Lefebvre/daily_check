@@ -20,10 +20,10 @@ const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   border-radius: 20px;
-  background-color: white;
+  background-color: ${COLORS.sixth};
 `;
 const Title = styled.div`
-  background-color: ${COLORS.secondary};
+
   height: 10vh;
   width: 100%;
   border-radius: 20px;
@@ -31,5 +31,8 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const MainArea = styled.div``;
+const MainArea = styled.div`
+
+background-color: ${COLORS.primary};
+`;
 export default Main;

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "../GlobalStyles";
+import {COLORS} from "../constants";
 import styled from "styled-components";
 import CheckList from "./ToDos/CheckList";
 import Home from "./Home";
@@ -34,7 +35,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 100px 200px 100px;
-  background-color: #282c34;
+  background-color: ${COLORS.secondary};
   height:  100vh;
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
@@ -42,7 +43,7 @@ const Wrapper = styled.div`
   }
 `;
 const Main = styled.div`
-  background-color: #282c34;
+
   height: 100vh;
   display:flex;
   justify-content:center;

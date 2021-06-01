@@ -29,15 +29,16 @@ justify-content:space-evenly;
 align-items:center;
 height:50vh;
 border-radius:20px;
+border: 5px double white;
 `;
 const Navig = styled(NavLink)`
-
+background-color:${COLORS.sixth};
   padding-top: 30px;
 width:80%;
   align-items: center;
   font-weight: bolder;
   height: 10vh;
-  color: white;
+  color: ${COLORS.fifth};
   padding-left: 15px;
 border: 1px solid white;
 border-radius:20px;
