@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Main from "../Main";
 const CheckList = () => {
-  return <Main title={"To Dos"} />;
+  return (<Main title={"To Dos"} >
+<Title>To dos</Title>
+
+  </Main>)
 };
 
 const Wrapper = styled.div`

@@ -6,3 +6,7 @@ export const COLORS = {
   fifth:'#282c34',
   sixth: '#ebf4ee',
 };
+
+export const SIZE ={
+mobile : "media only screen (min-width: 768px) "
+}

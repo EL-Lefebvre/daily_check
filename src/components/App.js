@@ -7,11 +7,14 @@ import CheckList from "./ToDos/CheckList";
 import Home from "./Home";
 import Mood from "./Mood/Mood";
 import SideBar from "./SideBar";
+import Logo from "./Logo"
 function App() {
   return (
     <Wrapper className="App">
       <Router>
+
         <SideBar />
+    
         <Main>
           <Switch>
             <Route exact path="/">
@@ -49,4 +52,5 @@ const Main = styled.div`
   justify-content:center;
   align-items:center;
 `;
+
 export default App;
